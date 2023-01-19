@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <meta name="author" content="Lokesh Kavisth" />
+    <meta name="title" content="BendyBorder" />
+    <meta
+      name="description"
+      content="A visual generator to build organic looking shapes with the help of CSS3 border-radius property."
+    />
+    <meta
+      name="keywords"
+      content="border radius Generator, radius generator, css border radius, css blob generator, blob radius generator"
+    />
+    <title>BendyBorder</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="logo">
+          <a href="/">BendyBorder</a>
+        </div>
+        <div class="nav__links">
+          <ul>
+            <li>
+              <a href="https://twitter.com/lokeshkavisth" target="_blank"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lokesh-kavisth-a22013258/"
+                target="_blank"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <a href="" class="btn"
+            ><ion-icon name="logo-github"></ion-icon> Star on GitHub</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="bradius__container">
+        <h1 class="container__title">Border Radius Generator</h1>
+
+        <div class="border__boxcontainer">
+          <div class="borderbox" id="borderBox"></div>
+        </div>
+
+        <div class="input-radius">
+          <div>
+            <label for="topLeft">Top-Left</label>
+            <input type="text" name="topLeft" id="topLeft" value="0" />
+          </div>
+          <div>
+            <label for="topRight">Top-Right</label>
+            <input type="text" name="topRight" id="topRight" value="0" />
+          </div>
+          <div>
+            <label for="bottonRight">Bottom-Right</label>
+            <input type="text" name="bottomRight" id="bottomRight" value="0" />
+          </div>
+          <div>
+            <label for="bottomLeft">Bottom-Left</label>
+            <input type="text" name="bottomLeft" id="bottomLeft" value="0" />
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button class="btn-2" id="copyradius" onclick="submitRadiusValue()">
+            Generate
+          </button>
+
+          <button
+            class="btn-2"
+            id="copyradius"
+            onclick="randomRadiusGen()"
+            disabled
+          >
+            Coming Soon
+          </button>
+        </div>
+
+        <code class="radiusCode">border-radius: 0rem 0rem 0rem 0rem;</code>
+
+        <button class="btn-2" id="copyradius" onclick="copyRadius()">
+          Copy to Clipboard
+        </button>
+      </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <article class="footer__container">
+        <div class="footer__logo"><a href="/">BendyBorder</a></div>
+
+        <div class="footer__text">
+          <p>Made with <ion-icon name="heart-outline"></ion-icon> by Lokesh</p>
+        </div>
+        <div class="footer__social">
+          <ul>
+            <li>
+              <a href="https://github.com/lokeshkavisth" target="_blank"
+                ><ion-icon name="logo-github"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/lokeshkavisth"
+                target="_blank"
+                title="Twitter"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </footer>
+
+    <!-- scripts -->
+
+    <!-- ion icon -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
